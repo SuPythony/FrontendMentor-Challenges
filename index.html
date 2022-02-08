@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor Solutions</title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+
+        <style>
+            body {
+                background-color: rgb(32, 28, 28);
+                font-family: Roboto;
+                color: white;
+            }
+
+            #container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .link {
+                text-decoration: none;
+                position: relative;
+                color: crimson;
+            }
+
+            .link:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0px;
+                left: 0px;
+                background-color: white;
+                transition: transform 0.25s ease;
+            }
+
+            .link:hover:after {
+                transform: scaleX(1);
+            }
+
+            #solutions {
+                margin-top: 50px;
+            }
+
+            .button {
+                text-decoration: none;
+                color: white;
+                border: 2px solid white;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+
+            #footer {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100vw;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                background-color: crimson;
+            }
+
+            .button {
+                background: linear-gradient(to right, crimson, crimson);
+                background-size: 0 100%;
+                transition: all 0.5s ease;
+                background-repeat: no-repeat;
+            }
+
+            .button:hover {
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <a
+                class="link"
+                href="https://www.frontendmentor.io/challenges"
+                target="_blank"
+            >
+                <h1>Frontend Mentor Challenges</h1>
+            </a>
+            <div id="solutions">
+                <a href="/qr-code-component" class="button"
+                    >QR Code Component</a
+                >
+            </div>
+        </div>
+        <div id="footer">
+            Made by&nbsp;
+            <a
+                style="color: white"
+                href="https://github.com/SuPythony"
+                target="_blank"
+                >Sumanyu Aggarwal</a
+            >
+        </div>
+    </body>
+</html>
